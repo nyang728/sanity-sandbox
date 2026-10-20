@@ -37,8 +37,8 @@ a { color: inherit; }
 .container { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
 
 .site-header { border-bottom: 3px solid var(--accent); background: var(--header-bg); color: var(--header-text); }
-.site-header .container { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 16px; }
-.logo { font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+.site-header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; min-height: 64px; padding-top: 10px; padding-bottom: 10px; gap: 8px 16px; }
+.logo { white-space: nowrap; font-weight: 700; text-decoration: none; display: flex; align-items: center; gap: 8px; }
 .logo-mark { width: 22px; height: 22px; border-radius: 6px; background: var(--accent); }
 .nav { display: flex; gap: 4px; flex-wrap: wrap; }
 .nav a { text-decoration: none; padding: 6px 12px; border-radius: 8px; color: #d0d0d0; font-size: 15px; }
@@ -86,3 +86,10 @@ input:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: 
 .site-footer { background: var(--header-bg); color: #c4c4c4; border-top: 3px solid var(--accent); padding: 24px 0; font-size: 14px; }
 .site-footer .container { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .site-footer .status { color: #c4c4c4; }
+
+.search-form { display: flex; gap: 8px; max-width: 640px; margin-bottom: 24px; }
+.search-form input { flex: 1; min-width: 0; }
+.search-count { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+.search-result h3 { margin: 8px 0 6px; }
+.search-result h3 a { color: var(--accent); text-decoration: none; }
+.search-result h3 a:hover { text-decoration: underline; }

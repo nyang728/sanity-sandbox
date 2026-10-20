@@ -8,6 +8,7 @@ const links = [
   { href: '/about', label: 'About Us' },
   { href: '/resources', label: 'Resources' },
   { href: '/contact', label: 'Contact' },
+  { href: '/search', label: 'Search' },
 ];
 
 export default function Nav() {
